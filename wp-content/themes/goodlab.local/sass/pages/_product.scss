@@ -1,0 +1,148 @@
+
+$colorWhite: #fff;
+$fontSuBold: "Su Bold";
+$fontMontRegular: "Montserrat-Regular";
+$fontMontBold: "Montserrat-Bold";
+$fontMontSemiBold: "Montserrat-SemiBold";
+$fontGeoItalic: "Georgia Italic";
+$fontMontLight: "Montserrat-ExtraLight";
+
+.center{
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tableWrap{
+  table{
+    border: 1px solid #DBDBDB;
+    border-collapse: collapse;
+    th{
+      font:300 14px $fontMontBold;
+      color: #556E95;
+      padding: 20px 40px;
+      background: #E7F4F8;
+      border-bottom: 1px solid #DBDBDB;
+      text-align: left;
+    }
+    td{
+      padding: 15px 30px;
+      background: #E7F4F8;
+      font:300 16px $fontMontLight;
+    }
+    tr{
+      &:nth-child(2),
+      &:nth-child(4){
+        td{
+          background: $colorWhite;
+        }
+      }
+    }
+  }
+}
+
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  background-size: 100%;
+  min-height: 50px;
+  padding-bottom: 38px;
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+  }
+  .logo {
+    a {
+      font: 300 40px $fontSuBold;
+      color: #3484F5;
+      text-shadow: 0 6px 16px #606060;
+      -webkit-text-stroke: 1px #fff;
+      letter-spacing: 0.5px;
+    }
+  }
+  .menu {
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font: 300 18px $fontMontRegular;
+          color: #fff;
+          opacity: 0.5;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.mainSection{
+  background: $colorWhite;
+  padding: 50px 0;
+  .commonWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .leftWrap{
+    background: url("assets/img/product-foto2.png") no-repeat center;
+    background-size: 88% 81%;
+    width: 700px;
+    height: 700px;
+  }
+  .rightWrap{
+    width: 55%;
+    .wayWrap{
+      padding-bottom: 25px;
+      ul{
+        li{
+          display: inline-block;
+          a{
+            font:300 12px $fontMontLight;
+            color: #556E95;
+            &:after{
+              content: ">";
+              padding-left: 4px;
+            }
+          }
+        }
+      }
+    }
+    .aboutWrap{
+      h3{
+        font:300 18px $fontMontSemiBold;
+        color: #003F6F;
+        padding-bottom: 15px;
+      }
+      p{
+        font:300 16px $fontMontLight;
+        color: #003F6F;
+        padding-bottom: 20px;
+        //max-width: calc(61% - -10px);
+      }
+      p{
+        line-height: 25px;
+      }
+      ul{
+        padding-bottom: 20px;
+        li{
+          font:300 16px $fontMontLight;
+          padding: 8px 0;
+          &:before{
+            content: "\271A";
+            color: #FD8955;
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

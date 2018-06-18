@@ -1,0 +1,1675 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/css.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 1, sass/components/_reset1.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* line 10, sass/components/_reset1.scss */
+body {
+  margin: 0;
+}
+
+/* line 14, sass/components/_reset1.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* line 24, sass/components/_reset1.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/* line 31, sass/components/_reset1.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 35, sass/components/_reset1.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* line 44, sass/components/_reset1.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* line 51, sass/components/_reset1.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  text-decoration: none;
+}
+
+/* line 59, sass/components/_reset1.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/* line 68, sass/components/_reset1.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* line 73, sass/components/_reset1.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 78, sass/components/_reset1.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* line 87, sass/components/_reset1.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 91, sass/components/_reset1.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* line 96, sass/components/_reset1.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 100, sass/components/_reset1.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 108, sass/components/_reset1.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 112, sass/components/_reset1.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+/* line 125, sass/components/_reset1.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/* line 130, sass/components/_reset1.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 135, sass/components/_reset1.scss */
+img {
+  border-style: none;
+}
+
+/* line 139, sass/components/_reset1.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 143, sass/components/_reset1.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 164, sass/components/_reset1.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 176, sass/components/_reset1.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+   *    controls in Android 4.
+   * 2. Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 189, sass/components/_reset1.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 205, sass/components/_reset1.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 218, sass/components/_reset1.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 230, sass/components/_reset1.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 242, sass/components/_reset1.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * 1. Add the correct display in IE 9-.
+   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 263, sass/components/_reset1.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+   * Remove the default vertical scrollbar in IE.
+   */
+/* line 275, sass/components/_reset1.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10-.
+   * 2. Remove the padding in IE 10-.
+   */
+/* line 285, sass/components/_reset1.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 298, sass/components/_reset1.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 309, sass/components/_reset1.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+/* line 321, sass/components/_reset1.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 332, sass/components/_reset1.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in Edge, IE, and Firefox.
+   */
+/* line 349, sass/components/_reset1.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 362, sass/components/_reset1.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+/* line 375, sass/components/_reset1.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+   * Add the correct display in IE.
+   */
+/* line 384, sass/components/_reset1.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10-.
+   */
+/* line 397, sass/components/_reset1.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 401, sass/components/_reset1.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 406, sass/components/_reset1.scss */
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("assets/fonts/OpenSans-Semibold/OpenSans-Semibold.ttf");
+}
+@font-face {
+  font-family: "Lato Regular";
+  src: url("assets/fonts/Lato Regular/Lato Regular.ttf");
+}
+@font-face {
+  font-family: "Su Regular";
+  src: url("assets/fonts/Su Regular/Su Regular.ttf");
+}
+@font-face {
+  font-family: "Su Bold";
+  src: url("assets/fonts/Su Bold/Su Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("assets/fonts/Montserrat-Regular/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("assets/fonts/Montserrat-Regular/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("assets/fonts/Montserrat-Regular/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Georgia Italic";
+  src: url("assets/fonts/Georgia Italic/Georgia Italic.ttf");
+}
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("assets/fonts/Montserrat-Regular/Montserrat-ExtraLight.ttf");
+}
+/* line 13, sass/components/_footer.scss */
+footer {
+  background: #003F6F;
+}
+/* line 15, sass/components/_footer.scss */
+footer .bottomBar {
+  padding: 30px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #468CC2;
+}
+/* line 21, sass/components/_footer.scss */
+footer .bottomBar .contactLeftWrap p, footer .bottomBar .contactLeftWrap a, footer .bottomBar .contactRightWrap p, footer .bottomBar .contactRightWrap a {
+  font: 300 16px "Montserrat-Regular";
+  color: #468CC2;
+  padding-bottom: 10px;
+}
+/* line 26, sass/components/_footer.scss */
+footer .bottomBar .contactLeftWrap a, footer .bottomBar .contactRightWrap a {
+  display: block;
+}
+/* line 31, sass/components/_footer.scss */
+footer .bottomBar .contactRightWrap {
+  text-align: right;
+}
+/* line 34, sass/components/_footer.scss */
+footer .bottomBar .contactRightWrap > p {
+  color: #fff;
+}
+/* line 38, sass/components/_footer.scss */
+footer .bottomBarSecond {
+  padding: 20px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 42, sass/components/_footer.scss */
+footer .bottomBarSecond p {
+  font: 300 16px "Montserrat-Regular";
+  color: #468CC2;
+}
+/* line 47, sass/components/_footer.scss */
+footer .bottomBarSecond .contactRightWrap p {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 51, sass/components/_footer.scss */
+footer .bottomBarSecond .contactRightWrap a {
+  align-items: baseline;
+  padding-left: 10px;
+}
+
+/* line 1, sass/components/_posts.scss */
+.mainDescription {
+  padding: 50px 0;
+}
+/* line 3, sass/components/_posts.scss */
+.mainDescription h1 {
+  font: 300 36px "Montserrat-Bold";
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* line 9, sass/components/_posts.scss */
+.mainDescription p {
+  color: #556E95;
+  font: 300 16px "Montserrat-Regular";
+  margin: 0 auto;
+  max-width: 75%;
+  line-height: 24px;
+}
+/* line 15, sass/components/_posts.scss */
+.mainDescription p:last-child {
+  padding-top: 20px;
+}
+
+/* line 8, sass/pages/_home.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 19, sass/pages/_home.scss */
+.commonAboutInfo .commonImgAbout {
+  display: inline-block;
+  background: url("assets/img/atoms-6 v2.png") no-repeat center;
+  background-size: 100% 100%;
+  width: 213px;
+  height: 211px;
+}
+/* line 26, sass/pages/_home.scss */
+.commonAboutInfo .commonTextAbout {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 68px;
+}
+/* line 30, sass/pages/_home.scss */
+.commonAboutInfo .commonTextAbout h1 {
+  position: relative;
+  right: 58px;
+  font: 300 36px "Montserrat-Bold";
+  color: #fff;
+  text-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+/* line 37, sass/pages/_home.scss */
+.commonAboutInfo .commonTextAbout span {
+  padding-top: 15px;
+  font: 300 16px "Montserrat-Regular";
+  color: #fff;
+  max-width: 366px;
+  word-wrap: break-word;
+  display: block;
+  line-height: 29px;
+}
+
+/* line 49, sass/pages/_home.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  padding-bottom: 38px;
+}
+/* line 54, sass/pages/_home.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 61, sass/pages/_home.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 71, sass/pages/_home.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 74, sass/pages/_home.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 77, sass/pages/_home.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 81, sass/pages/_home.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+/* line 87, sass/pages/_home.scss */
+.contentHeader .menu ul li.current-menu-item a {
+  opacity: 1;
+}
+
+/* line 93, sass/pages/_home.scss */
+.mainSection {
+  background: #fff;
+  padding-bottom: 120px;
+}
+/* line 97, sass/pages/_home.scss */
+.mainSection .titleMain p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font: 300 30px "Montserrat-Bold";
+}
+/* line 107, sass/pages/_home.scss */
+.mainSection .everFunctions {
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.22);
+  margin: 0 12px 40px 12px;
+}
+/* line 112, sass/pages/_home.scss */
+.mainSection .everFunctions:hover .firstBlock {
+  background: url("assets/img/functions2.png") no-repeat center;
+  background-size: contain;
+  height: 78px;
+  width: 273px;
+}
+/* line 118, sass/pages/_home.scss */
+.mainSection .everFunctions .firstBlock {
+  background: url("assets/img/functions.png") no-repeat center;
+  background-size: contain;
+  height: 78px;
+  width: 273px;
+}
+/* line 124, sass/pages/_home.scss */
+.mainSection .everFunctions .secondBlock {
+  background: #fff;
+  height: 78px;
+  width: 274px;
+}
+/* line 128, sass/pages/_home.scss */
+.mainSection .everFunctions .secondBlock p {
+  padding: 17px 12px 0 12px;
+  box-sizing: border-box;
+  color: #003F6F;
+  font: 300 18px "Montserrat-SemiBold";
+}
+
+/* line 138, sass/pages/_home.scss */
+.mainAboutAs {
+  background: #f4f5f7;
+  padding-bottom: 60px;
+}
+/* line 141, sass/pages/_home.scss */
+.mainAboutAs .mainWrapForInfo {
+  position: relative;
+}
+/* line 143, sass/pages/_home.scss */
+.mainAboutAs .mainWrapForInfo .headersWrap {
+  position: absolute;
+  top: -75px;
+}
+/* line 146, sass/pages/_home.scss */
+.mainAboutAs .mainWrapForInfo .headersWrap .imgOur {
+  background: url("assets/img/atoms-6.png") no-repeat center;
+  background-size: 100% 100%;
+  width: 220px;
+  height: 300px;
+}
+/* line 153, sass/pages/_home.scss */
+.mainAboutAs .mainWrapForInfo .headersWrap .textOur a {
+  color: #013f70;
+  text-shadow: none;
+}
+/* line 157, sass/pages/_home.scss */
+.mainAboutAs .mainWrapForInfo .headersWrap .textOur span {
+  padding-top: 9px;
+  color: #5c749a;
+}
+/* line 164, sass/pages/_home.scss */
+.mainAboutAs .textLeftWrap {
+  padding-top: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 168, sass/pages/_home.scss */
+.mainAboutAs .textLeftWrap p {
+  font: 300 16px "Georgia Italic";
+  color: #465D7F;
+  max-width: 180px;
+  line-height: 27px;
+}
+/* line 173, sass/pages/_home.scss */
+.mainAboutAs .textLeftWrap p:before {
+  content: ' ';
+  width: 46px;
+  height: 39px;
+  background: url("assets/img/quotes.png") no-repeat center;
+  position: relative;
+  left: -15px;
+  bottom: -19px;
+  display: block;
+}
+/* line 185, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap {
+  padding-top: 109px;
+  padding-left: 18px;
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(55% - 10px);
+}
+/* line 191, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap p {
+  padding: 30px 0;
+  color: #556E95;
+  font: 300 16px "Montserrat-Regular";
+}
+/* line 197, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap p {
+  line-height: 27px;
+}
+/* line 200, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap img {
+  padding-top: 97px;
+}
+/* line 203, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap a {
+  color: #003F6F;
+  font: 300 18px "Montserrat-Regular";
+  text-decoration: underline;
+}
+/* line 207, sass/pages/_home.scss */
+.mainAboutAs .textCenterWrap a:hover {
+  color: #556E95;
+}
+/* line 212, sass/pages/_home.scss */
+.mainAboutAs .sponsorsWrap {
+  display: inline-block;
+  width: auto;
+  padding-left: 106px;
+  padding-top: 120px;
+}
+/* line 217, sass/pages/_home.scss */
+.mainAboutAs .sponsorsWrap .sponsorsEach {
+  padding-bottom: 30px;
+}
+
+/* line 223, sass/pages/_home.scss */
+.descriptionForInfo {
+  padding: 50px 0;
+}
+/* line 225, sass/pages/_home.scss */
+.descriptionForInfo img {
+  margin: 0 auto;
+  display: block;
+}
+/* line 229, sass/pages/_home.scss */
+.descriptionForInfo p {
+  color: #556E95;
+  font: 300 16px "Montserrat-Regular";
+  margin: 0 auto;
+  max-width: 75%;
+  line-height: 24px;
+  padding: 20px 0;
+}
+
+/* line 12, sass/pages/_katalogi.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  padding-bottom: 38px;
+}
+/* line 17, sass/pages/_katalogi.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 24, sass/pages/_katalogi.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 34, sass/pages/_katalogi.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 37, sass/pages/_katalogi.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 40, sass/pages/_katalogi.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 44, sass/pages/_katalogi.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+
+/* line 53, sass/pages/_katalogi.scss */
+.buttonForSidebar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 75%;
+  width: 45px;
+  height: 40px;
+  background: #fff;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+}
+/* line 66, sass/pages/_katalogi.scss */
+.buttonForSidebar:after {
+  content: "\203A";
+  margin-left: 17px;
+  font-size: 34px;
+  text-align: center;
+  color: #003F6F;
+}
+
+/* line 76, sass/pages/_katalogi.scss */
+.arrowsWrapForButton:after {
+  content: "\2039";
+  margin-left: 19px;
+  font-size: 34px;
+  text-align: center;
+  color: #003F6F;
+}
+
+/* line 88, sass/pages/_katalogi.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 97, sass/pages/_katalogi.scss */
+.mainSectionForCategories {
+  background: #fff;
+}
+/* line 101, sass/pages/_katalogi.scss */
+.mainSectionForCategories .titleMain p {
+  padding-top: 20px;
+  text-align: center;
+  font: 300 30px "Montserrat-Bold";
+}
+/* line 107, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar {
+  width: 550px;
+  background: #F2F6F8;
+  position: absolute;
+  min-height: 100%;
+  left: -491px;
+  transition: .3s;
+}
+/* line 115, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar .categories {
+  padding-left: 190px;
+  padding-top: 100px;
+  position: relative;
+  display: inline-block;
+}
+/* line 121, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar p {
+  font: 300 18px "Montserrat-SemiBold";
+  color: #003F6F;
+  padding-left: 8px;
+  margin-bottom: 30px;
+}
+/* line 128, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li {
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+/* line 132, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li:before {
+  content: "";
+  border-left: 2px solid #A4B8D5;
+  height: 30px;
+  width: 1px;
+  display: inline-block;
+}
+/* line 140, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li:hover:before, .mainSectionForCategories .sidebar ul li:focus:before {
+  border-color: #003F6F;
+}
+/* line 144, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li a {
+  font: 300 16px "Montserrat-ExtraLight";
+  color: #003F6F;
+  padding-left: 5px;
+  vertical-align: super;
+}
+/* line 152, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li ul {
+  padding-left: 15px;
+  display: none;
+}
+/* line 156, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sidebar ul li:hover > ul {
+  display: block;
+}
+/* line 161, sass/pages/_katalogi.scss */
+.mainSectionForCategories .sideBarWrapForSlide {
+  left: 0;
+}
+/* line 166, sass/pages/_katalogi.scss */
+.mainSectionForCategories .directoriesWrap {
+  padding: 50px 0;
+}
+/* line 168, sass/pages/_katalogi.scss */
+.mainSectionForCategories .directoriesWrap .directoriesEach {
+  box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.22);
+  padding: 30px 40px;
+  margin: 0 12px 50px 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 174, sass/pages/_katalogi.scss */
+.mainSectionForCategories .directoriesWrap .directoriesEach p {
+  font: 300 18px "Montserrat-SemiBold";
+  color: #003F6F;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* line 11, sass/pages/_kategorie.scss */
+.buttonForSidebar {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 75%;
+  width: 45px;
+  height: 40px;
+  background: #fff;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+}
+/* line 24, sass/pages/_kategorie.scss */
+.buttonForSidebar:after {
+  content: "\203A";
+  margin-left: 17px;
+  font-size: 34px;
+  text-align: center;
+  color: #003F6F;
+}
+
+/* line 34, sass/pages/_kategorie.scss */
+.arrowsWrapForButton:after {
+  content: "\2039";
+  margin-left: 19px;
+  font-size: 34px;
+  text-align: center;
+  color: #003F6F;
+}
+
+/* line 45, sass/pages/_kategorie.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 55, sass/pages/_kategorie.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  padding-bottom: 38px;
+}
+/* line 60, sass/pages/_kategorie.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 67, sass/pages/_kategorie.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 77, sass/pages/_kategorie.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 80, sass/pages/_kategorie.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 83, sass/pages/_kategorie.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 87, sass/pages/_kategorie.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+
+/* line 98, sass/pages/_kategorie.scss */
+.mainSectionForProducts {
+  background: #fff;
+}
+/* line 105, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar {
+  width: 550px;
+  background: #F2F6F8;
+  position: absolute;
+  min-height: 100%;
+  left: -491px;
+  transition: .3s;
+}
+/* line 113, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar .categories {
+  padding-left: 190px;
+  padding-top: 100px;
+  position: relative;
+  display: inline-block;
+}
+/* line 119, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar p {
+  font: 300 18px "Montserrat-SemiBold";
+  color: #003F6F;
+  padding-left: 8px;
+  padding-bottom: 30px;
+}
+/* line 126, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li {
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+/* line 130, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li:before {
+  content: "";
+  border-left: 2px solid #A4B8D5;
+  height: 30px;
+  width: 1px;
+  display: inline-block;
+}
+/* line 138, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li:hover:before, .mainSectionForProducts .sidebar ul li:focus:before {
+  border-color: #003F6F;
+}
+/* line 142, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li a {
+  font: 300 16px "Montserrat-ExtraLight";
+  color: #003F6F;
+  padding-left: 5px;
+  vertical-align: super;
+}
+/* line 150, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li ul {
+  padding-left: 15px;
+  display: none;
+}
+/* line 154, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sidebar ul li:hover > ul {
+  display: block;
+}
+/* line 159, sass/pages/_kategorie.scss */
+.mainSectionForProducts .sideBarWrapForSlide {
+  left: 0;
+}
+/* line 164, sass/pages/_kategorie.scss */
+.mainSectionForProducts .titleMain p {
+  padding-top: 20px;
+  text-align: center;
+  font: 300 30px "Montserrat-Bold";
+}
+/* line 171, sass/pages/_kategorie.scss */
+.mainSectionForProducts .functionsWrap {
+  cursor: pointer;
+  padding: 50px 0;
+}
+/* line 175, sass/pages/_kategorie.scss */
+.mainSectionForProducts .everFunctions {
+  box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.22);
+  margin: 0 12px 40px 12px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 180, sass/pages/_kategorie.scss */
+.mainSectionForProducts .everFunctions:hover .firstBlock {
+  background: url("assets/img/functions2.png") no-repeat center;
+  background-size: contain;
+  height: 78px;
+  width: 273px;
+}
+/* line 187, sass/pages/_kategorie.scss */
+.mainSectionForProducts .everFunctions .firstBlock {
+  background: url("assets/img/functions.png") no-repeat center;
+  background-size: contain;
+  height: 78px;
+  width: 273px;
+}
+/* line 193, sass/pages/_kategorie.scss */
+.mainSectionForProducts .everFunctions .secondBlock {
+  background: #fff;
+  height: 78px;
+  width: 274px;
+}
+/* line 197, sass/pages/_kategorie.scss */
+.mainSectionForProducts .everFunctions .secondBlock p {
+  padding: 17px 12px 0 12px;
+  box-sizing: border-box;
+  color: #003F6F;
+  font: 300 18px "Montserrat-SemiBold";
+}
+
+/* line 8, sass/pages/_kontact.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 17, sass/pages/_kontact.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  padding-bottom: 38px;
+}
+/* line 22, sass/pages/_kontact.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 29, sass/pages/_kontact.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 39, sass/pages/_kontact.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 42, sass/pages/_kontact.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 45, sass/pages/_kontact.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 49, sass/pages/_kontact.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+
+/* line 60, sass/pages/_kontact.scss */
+.contentHeader .infoOur .imgOur {
+  background: url("assets/img/atoms-6 3.png") no-repeat center;
+  background-size: 100% 100%;
+  width: 213px;
+  height: 211px;
+}
+
+/* line 69, sass/pages/_kontact.scss */
+.mainSection {
+  background: #fff;
+}
+/* line 71, sass/pages/_kontact.scss */
+.mainSection .contentWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 100px 0;
+}
+/* line 77, sass/pages/_kontact.scss */
+.mainSection .titleMain p {
+  padding-top: 20px;
+  text-align: center;
+  font: 300 30px "Montserrat-Bold";
+}
+/* line 85, sass/pages/_kontact.scss */
+.mainSection .textLeftWrap .quote p {
+  font: 300 16px "Georgia Italic";
+  color: #465D7F;
+  max-width: 180px;
+  line-height: 27px;
+}
+/* line 90, sass/pages/_kontact.scss */
+.mainSection .textLeftWrap .quote p:before {
+  content: '';
+  width: 46px;
+  height: 39px;
+  background: url("assets/img/quotes.png") no-repeat center;
+  position: relative;
+  display: block;
+  left: -15px;
+  bottom: -19px;
+}
+/* line 102, sass/pages/_kontact.scss */
+.mainSection .textLeftWrap .contact {
+  padding-top: 30px;
+}
+/* line 104, sass/pages/_kontact.scss */
+.mainSection .textLeftWrap .contact a {
+  display: block;
+  color: #FD8956;
+  font: 300 16px "Montserrat-SemiBold";
+  padding-bottom: 3px;
+}
+/* line 109, sass/pages/_kontact.scss */
+.mainSection .textLeftWrap .contact a:first-child {
+  padding-bottom: 10px;
+}
+/* line 117, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm {
+  width: 450px;
+  margin: 0 auto;
+}
+/* line 121, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="text"],
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="email"],
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form textarea,
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form fieldset {
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font: 300 16px "Montserrat-Regular";
+  outline: none;
+}
+/* line 130, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="text"]::-webkit-input-placeholder,
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="email"]::-webkit-input-placeholder,
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form textarea::-webkit-input-placeholder,
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form fieldset::-webkit-input-placeholder {
+  color: #BAA6A6;
+}
+/* line 137, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="email"] {
+  margin-bottom: 0;
+  border: none;
+}
+/* line 141, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form legend {
+  margin-left: 13px;
+  color: #BAA6A6;
+}
+/* line 145, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form fieldset {
+  padding: 1px;
+  width: 100%;
+}
+/* line 149, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form textarea {
+  height: 200px;
+  resize: none;
+}
+/* line 153, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="submit"] {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.22);
+  font: 300 16px "Montserrat-SemiBold";
+  border-radius: 7px;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  color: #0F436C;
+  cursor: pointer;
+  margin-left: 58%;
+}
+/* line 164, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .eachForm form input[type="submit"]:hover {
+  transition: .3s;
+  background: #F0F0F0;
+}
+/* line 171, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .mapWrap {
+  margin-top: 80px;
+  width: 625px;
+  height: 350px;
+  border-radius: 10px;
+}
+/* line 177, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .thankyouWrap {
+  display: none;
+  margin: 30px 0;
+}
+/* line 180, sass/pages/_kontact.scss */
+.mainSection .formMiddleWrap .commonForFormMap .thankyouWrap p {
+  text-align: center;
+  font: 300 25px "Montserrat-SemiBold";
+  color: yellowgreen;
+}
+/* line 188, sass/pages/_kontact.scss */
+.mainSection .sponsorsWrap {
+  padding-top: 50px;
+}
+/* line 190, sass/pages/_kontact.scss */
+.mainSection .sponsorsWrap .sponsorsEach {
+  padding-bottom: 30px;
+}
+
+/* line 196, sass/pages/_kontact.scss */
+.redColor {
+  border: 1px solid red !important;
+}
+
+/* line 200, sass/pages/_kontact.scss */
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+/* line 210, sass/pages/_kontact.scss */
+.acf-map img {
+  max-width: inherit !important;
+}
+
+/* line 214, sass/pages/_kontact.scss */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 99;
+  display: none;
+}
+/* line 223, sass/pages/_kontact.scss */
+.preloader .loader {
+  background: url("assets/img/gif-load.gif") no-repeat center;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 11, sass/pages/_onas.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 21, sass/pages/_onas.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  padding-bottom: 38px;
+}
+/* line 26, sass/pages/_onas.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 33, sass/pages/_onas.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 43, sass/pages/_onas.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 46, sass/pages/_onas.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 49, sass/pages/_onas.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 53, sass/pages/_onas.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+
+/* line 65, sass/pages/_onas.scss */
+.contentHeader .infoOur .imgOur {
+  background: url("assets/img/atoms-6 3.png") no-repeat center;
+  background-size: 100% 100%;
+  width: 213px;
+  height: 211px;
+}
+
+/* line 73, sass/pages/_onas.scss */
+.mainSection {
+  background: #fff;
+}
+/* line 76, sass/pages/_onas.scss */
+.mainSection .titleMain p {
+  padding-top: 20px;
+  text-align: center;
+  font: 300 30px "Montserrat-Bold";
+}
+/* line 82, sass/pages/_onas.scss */
+.mainSection .contentWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 100px 0;
+}
+/* line 89, sass/pages/_onas.scss */
+.mainSection .textLeftWrap .quote p {
+  font: 300 16px "Georgia Italic";
+  color: #465D7F;
+  max-width: 180px;
+  line-height: 27px;
+}
+/* line 94, sass/pages/_onas.scss */
+.mainSection .textLeftWrap .quote p:before {
+  content: '';
+  width: 46px;
+  height: 39px;
+  background: url("assets/img/quotes.png") no-repeat center;
+  position: relative;
+  display: block;
+  left: -15px;
+  bottom: -19px;
+}
+/* line 107, sass/pages/_onas.scss */
+.mainSection .infoMiddleWrap {
+  max-width: 52%;
+}
+/* line 109, sass/pages/_onas.scss */
+.mainSection .infoMiddleWrap img {
+  padding-bottom: 30px;
+}
+/* line 112, sass/pages/_onas.scss */
+.mainSection .infoMiddleWrap p {
+  color: #465D7F;
+  font: 300 16px "Montserrat-ExtraLight";
+  padding-bottom: 30px;
+}
+/* line 116, sass/pages/_onas.scss */
+.mainSection .infoMiddleWrap p:last-child {
+  padding-bottom: 0;
+}
+/* line 120, sass/pages/_onas.scss */
+.mainSection .infoMiddleWrap p {
+  line-height: 26px;
+}
+/* line 124, sass/pages/_onas.scss */
+.mainSection .sponsorsWrap {
+  padding-top: 50px;
+}
+/* line 126, sass/pages/_onas.scss */
+.mainSection .sponsorsWrap .sponsorsEach {
+  padding-bottom: 30px;
+}
+
+/* line 10, sass/pages/_product.scss */
+.center {
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 20, sass/pages/_product.scss */
+.tableWrap table {
+  border: 1px solid #DBDBDB;
+  border-collapse: collapse;
+}
+/* line 23, sass/pages/_product.scss */
+.tableWrap table th {
+  font: 300 14px "Montserrat-Bold";
+  color: #556E95;
+  padding: 20px 40px;
+  background: #E7F4F8;
+  border-bottom: 1px solid #DBDBDB;
+  text-align: left;
+}
+/* line 31, sass/pages/_product.scss */
+.tableWrap table td {
+  padding: 15px 30px;
+  background: #E7F4F8;
+  font: 300 16px "Montserrat-ExtraLight";
+}
+/* line 39, sass/pages/_product.scss */
+.tableWrap table tr:nth-child(2) td, .tableWrap table tr:nth-child(4) td {
+  background: #fff;
+}
+
+/* line 47, sass/pages/_product.scss */
+.contentHeader {
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  background-size: 100%;
+  min-height: 50px;
+  padding-bottom: 38px;
+}
+/* line 52, sass/pages/_product.scss */
+.contentHeader .topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 20px;
+}
+/* line 59, sass/pages/_product.scss */
+.contentHeader .logo a {
+  font: 300 40px "Su Bold";
+  color: #3484F5;
+  text-shadow: 0 6px 16px #606060;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 0.5px;
+}
+/* line 69, sass/pages/_product.scss */
+.contentHeader .menu ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+/* line 72, sass/pages/_product.scss */
+.contentHeader .menu ul li:last-child {
+  margin-right: 0;
+}
+/* line 75, sass/pages/_product.scss */
+.contentHeader .menu ul li a {
+  font: 300 18px "Montserrat-Regular";
+  color: #fff;
+  opacity: 0.5;
+}
+/* line 79, sass/pages/_product.scss */
+.contentHeader .menu ul li a:hover {
+  opacity: 1;
+}
+
+/* line 87, sass/pages/_product.scss */
+.mainSection {
+  background: #fff;
+  padding: 50px 0;
+}
+/* line 90, sass/pages/_product.scss */
+.mainSection .commonWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 95, sass/pages/_product.scss */
+.mainSection .leftWrap {
+  background: url("assets/img/product-foto2.png") no-repeat center;
+  background-size: 88% 81%;
+  width: 700px;
+  height: 700px;
+}
+/* line 101, sass/pages/_product.scss */
+.mainSection .rightWrap {
+  width: 55%;
+}
+/* line 103, sass/pages/_product.scss */
+.mainSection .rightWrap .wayWrap {
+  padding-bottom: 25px;
+}
+/* line 106, sass/pages/_product.scss */
+.mainSection .rightWrap .wayWrap ul li {
+  display: inline-block;
+}
+/* line 108, sass/pages/_product.scss */
+.mainSection .rightWrap .wayWrap ul li a {
+  font: 300 12px "Montserrat-ExtraLight";
+  color: #556E95;
+}
+/* line 111, sass/pages/_product.scss */
+.mainSection .rightWrap .wayWrap ul li a:after {
+  content: ">";
+  padding-left: 4px;
+}
+/* line 120, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap h3 {
+  font: 300 18px "Montserrat-SemiBold";
+  color: #003F6F;
+  padding-bottom: 15px;
+}
+/* line 125, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap p {
+  font: 300 16px "Montserrat-ExtraLight";
+  color: #003F6F;
+  padding-bottom: 20px;
+}
+/* line 131, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap p {
+  line-height: 25px;
+}
+/* line 134, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap ul {
+  padding-bottom: 20px;
+}
+/* line 136, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap ul li {
+  font: 300 16px "Montserrat-ExtraLight";
+  padding: 8px 0;
+}
+/* line 139, sass/pages/_product.scss */
+.mainSection .rightWrap .aboutWrap ul li:before {
+  content: "\271A";
+  color: #FD8955;
+  padding-right: 15px;
+}
+
+/* line 1, sass/components/_404.scss */
+.wrap404 {
+  padding: 10px 0 50px 0;
+}
+/* line 3, sass/components/_404.scss */
+.wrap404 p {
+  font: 300 10em "OpenSans-Semibold";
+  color: #3484f5;
+  text-align: center;
+}
+/* line 8, sass/components/_404.scss */
+.wrap404 span {
+  font: 300 2em "Montserrat-Regular";
+  display: block;
+  text-align: center;
+}
+/* line 14, sass/components/_404.scss */
+.wrap404 .btn {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 50px;
+  background: #3484F5;
+  color: #fff;
+  font: 300 17px "Montserrat-Regular";
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+/* line 27, sass/components/_404.scss */
+.wrap404 .btn:hover {
+  transition: .3s;
+  background: #00a0d2;
+}

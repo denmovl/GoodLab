@@ -1,0 +1,58 @@
+@import "../components/reset1",
+"../components/fonts";
+
+$colorWhite: #fff;
+$fontSemibold: "OpenSans-Semibold";
+$fontRegular: "Su Regular";
+$fontSuBold: "Su Bold";
+$fontMontRegular: "Montserrat-Regular";
+$fontMontBold: "Montserrat-Bold";
+$fontMontSemiBold: "Montserrat-SemiBold";
+$fontGeoItalic: "Georgia Italic";
+
+footer{
+  background: #003F6F;
+  .bottomBar {
+    padding: 30px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #468CC2;
+    .contactLeftWrap, .contactRightWrap {
+      p, a {
+        font: 300 16px $fontMontRegular;
+        color: #468CC2;
+        padding-bottom: 10px;
+      }
+      a {
+        display: block;
+
+      }
+    }
+    .contactRightWrap {
+      text-align: right;
+    }
+    .contactRightWrap > p {
+      color: $colorWhite;
+    }
+  }
+  .bottomBarSecond{
+    padding: 20px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    p{
+      font: 300 16px $fontMontRegular;
+      color: #468CC2;
+    }
+    .contactRightWrap{
+      p{
+        display: inline-block;
+        vertical-align: top;
+      }
+      a{
+        align-items: baseline;
+        padding-left: 10px;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.wrap404{
+  padding: 10px 0 50px 0;
+  p{
+    font: 300 10em $fontSemibold;
+    color: #3484f5;
+    text-align: center;
+  }
+  span{
+    font: 300 2.0em $fontMontRegular;
+    display: block;
+    text-align: center;
+  }
+
+  .btn{
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 50px;
+    background: #3484F5;
+    color: $colorWhite;
+    font:300 17px $fontMontRegular;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    margin-top: 30px;
+    &:hover{
+      transition: .3s;
+      background: #00a0d2;
+    }
+  }
+}

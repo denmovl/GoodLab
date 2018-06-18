@@ -1,0 +1,130 @@
+
+
+$colorWhite: #fff;
+$fontSuBold: "Su Bold";
+$fontMontRegular: "Montserrat-Regular";
+$fontMontBold: "Montserrat-Bold";
+$fontMontSemiBold: "Montserrat-SemiBold";
+$fontGeoItalic: "Georgia Italic";
+$fontMontLight: "Montserrat-ExtraLight";
+
+.center{
+  max-width: 1240px;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10px !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.contentHeader{
+  background: url("assets/img/baner bcg 2.png") no-repeat center;
+  //background-size: 100% 100%;
+  //min-height: 500px;
+  padding-bottom: 38px;
+  .topBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+  }
+  .logo{
+    a{
+      font:300 40px $fontSuBold;
+      color: #3484F5;
+      text-shadow: 0 6px 16px #606060;
+      -webkit-text-stroke: 1px #fff;
+      letter-spacing: 0.5px;
+    }
+  }
+  .menu{
+    ul{
+      li{
+        display: inline-block;
+        margin-right: 40px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          font:300 18px $fontMontRegular;
+          color: #fff;
+          opacity: 0.5;
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.contentHeader{
+  .infoOur{
+    .imgOur {
+      background: url("assets/img/atoms-6 3.png") no-repeat center;
+      background-size: 100% 100%;
+      width: 213px;
+      height: 211px;
+    }
+  }
+}
+.mainSection {
+  background: $colorWhite;
+  .titleMain{
+    p{
+      padding-top: 20px;
+      text-align: center;
+      font:300 30px $fontMontBold;
+    }
+  }
+  .contentWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 100px 0;
+  }
+  .textLeftWrap {
+    .quote {
+      p {
+        font: 300 16px $fontGeoItalic;
+        color: #465D7F;
+        max-width: 180px;
+        line-height: 27px;
+        &:before {
+          content: '';
+          width: 46px;
+          height: 39px;
+          background: url("assets/img/quotes.png") no-repeat center;
+          position: relative;
+          display: block;
+          left: -15px;
+          bottom: -19px;
+        }
+      }
+    }
+  }
+  .infoMiddleWrap{
+    max-width: 52%;
+    img{
+      padding-bottom: 30px;
+    }
+    p{
+      color: #465D7F;
+      font:300 16px $fontMontLight;
+      padding-bottom: 30px;
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+    p{
+      line-height: 26px;
+    }
+  }
+  .sponsorsWrap{
+    padding-top: 50px;
+    .sponsorsEach{
+      padding-bottom: 30px;
+    }
+  }
+}

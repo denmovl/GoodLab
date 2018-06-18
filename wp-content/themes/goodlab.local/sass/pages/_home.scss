@@ -1,0 +1,237 @@
+$colorWhite: #fff;
+$fontSuBold: "Su Bold";
+$fontMontRegular: "Montserrat-Regular";
+$fontMontBold: "Montserrat-Bold";
+$fontMontSemiBold: "Montserrat-SemiBold";
+$fontGeoItalic: "Georgia Italic";
+//center block
+.center {
+    max-width: 1240px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 10px !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.commonAboutInfo {
+    //padding-top: 100px;
+    .commonImgAbout {
+        display: inline-block;
+        background: url("assets/img/atoms-6 v2.png") no-repeat center;
+        background-size: 100% 100%;
+        width: 213px;
+        height: 211px;
+    }
+    .commonTextAbout {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 68px;
+        h1 {
+            position: relative;
+            right: 58px;
+            font: 300 36px $fontMontBold;
+            color: $colorWhite;
+            text-shadow: 0 8px 25px rgba(0, 0, 0, 0.30);
+        }
+        span {
+            padding-top: 15px;
+            font: 300 16px $fontMontRegular;
+            color: $colorWhite;
+            max-width: 366px;
+            word-wrap: break-word;
+            display: block;
+            line-height: 29px;
+        }
+    }
+}
+
+.contentHeader {
+    background: url("assets/img/baner bcg 2.png") no-repeat center;
+    //background-size: 100% 100%;
+    //min-height: 500px;
+    padding-bottom: 38px;
+    .topBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 20px;
+    }
+    .logo {
+        a {
+            font: 300 40px $fontSuBold;
+            color: #3484F5;
+            text-shadow: 0 6px 16px #606060;
+            -webkit-text-stroke: 1px #fff;
+            letter-spacing: 0.5px;
+        }
+    }
+    .menu {
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 40px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font: 300 18px $fontMontRegular;
+                    color: #fff;
+                    opacity: 0.5;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        ul li.current-menu-item a {
+            opacity: 1;
+        }
+    }
+}
+
+.mainSection {
+    background: $colorWhite;
+    padding-bottom: 120px;
+    .titleMain {
+        p {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font: 300 30px $fontMontBold;
+        }
+    }
+    //.functionsWrap{
+    //  padding: 50px 0;
+    //}
+    .everFunctions {
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: 0 11px 22px 0 rgba(0, 0, 0, 0.22);
+        margin: 0 12px 40px 12px;
+        &:hover .firstBlock {
+            background: url("assets/img/functions2.png") no-repeat center;
+            background-size: contain;
+            height: 78px;
+            width: 273px;
+        }
+        .firstBlock {
+            background: url("assets/img/functions.png") no-repeat center;
+            background-size: contain;
+            height: 78px;
+            width: 273px;
+        }
+        .secondBlock {
+            background: $colorWhite;
+            height: 78px;
+            width: 274px;
+            p {
+                padding: 17px 12px 0 12px;
+                box-sizing: border-box;
+                color: #003F6F;
+                font: 300 18px $fontMontSemiBold;
+            }
+        }
+    }
+}
+
+.mainAboutAs {
+    background: #f4f5f7;
+    padding-bottom: 60px;
+    .mainWrapForInfo {
+        position: relative;
+        .headersWrap {
+            position: absolute;
+            top: -75px;
+            .imgOur {
+                background: url("assets/img/atoms-6.png") no-repeat center;
+                background-size: 100% 100%;
+                width: 220px;
+                height: 300px;
+            }
+            .textOur {
+                a {
+                    color: #013f70;
+                    text-shadow: none;
+                }
+                span {
+                    padding-top: 9px;
+                    color: #5c749a;
+                }
+            }
+        }
+    }
+    .textLeftWrap {
+        padding-top: 200px;
+        display: inline-block;
+        vertical-align: top;
+        p {
+            font: 300 16px $fontGeoItalic;
+            color: #465D7F;
+            max-width: 180px;
+            line-height: 27px;
+            &:before {
+                content: ' ';
+                width: 46px;
+                height: 39px;
+                background: url("assets/img/quotes.png") no-repeat center;
+                position: relative;
+                left: -15px;
+                bottom: -19px;
+                display: block;
+            }
+        }
+    }
+    .textCenterWrap {
+        padding-top: 109px;
+        padding-left: 18px;
+        display: inline-block;
+        vertical-align: top;
+        max-width: calc(55% - 10px);
+        p {
+            //line-height: 24px;
+            padding: 30px 0;
+            color: #556E95;
+            font: 300 16px $fontMontRegular;
+        }
+        p {
+            line-height: 27px;
+        }
+        img {
+            padding-top: 97px;
+        }
+        a {
+            color: #003F6F;
+            font: 300 18px $fontMontRegular;
+            text-decoration: underline;
+            &:hover {
+                color: #556E95;
+            }
+        }
+    }
+    .sponsorsWrap {
+        display: inline-block;
+        width: auto;
+        padding-left: 106px;
+        padding-top: 120px;
+        .sponsorsEach {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.descriptionForInfo {
+    padding: 50px 0;
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    p {
+        color: #556E95;
+        font: 300 16px "Montserrat-Regular";
+        margin: 0 auto;
+        max-width: 75%;
+        line-height: 24px;
+        padding: 20px 0;
+    }
+}
